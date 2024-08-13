@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Sa'adu Zungur University - Grade Calculator</title>
+</head>
+<body>
+    <div id="header">
+        <img src="./basug.jfif" alt="Sa'adu Zungur University Logo" id="school-logo">
+        <h1>Sa'adu Zungur University - GRADE CALCULATOR</h1>
+    </div>
+
+    <div id="calculator-container" class="container">
+        <h2>Semester GP Calculator</h2>
+        <table id="semester-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Unit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here -->
+            </tbody>
+        </table>
+        <button id="add-row-button">Add Row</button>
+        <div class="calculate-section">
+            <h3>SGPA: <input id="semester-result" type="number" readonly></h3>
+            <button id="semester-btn-cal">Calculate</button>
+            <button id="semester-btn-clear" class="clear">Clear</button>
+        </div>
+        
+        <h2>Cumulative GPA Calculator</h2>
+        <div id="cgpa-calculator">
+            <label for="cumulative-units">Total Cumulative Units:</label>
+            <input type="number" id="cumulative-units">
+            <label for="cumulative-gp">Total Cumulative Grade Points:</label>
+            <input type="number" id="cumulative-gp">
+            <h3>CGPA: <input id="cgpa-result" type="number" readonly></h3>
+            <button id="cgpa-btn-cal">Calculate CGPA</button>
+            <button id="cgpa-btn-clear" class="clear">Clear</button>
+        </div>
+    </div>
+
+    <script src="index.js" type="text/JavaScript"></script>
+</body>
+</html>
